@@ -1,0 +1,40 @@
+folder_name = “almuerzos”
+files = os.walk(folder_name);    #[hamburguesa.txt, fries.txt, casado.txt]
+index = 1
+for (f : files) 
+	print(f.name)
+	index = index + 1
+
+
+###
+1 hamburguesa
+2 fries
+3 casado
+
+
+###usuario selecciona comida
+seleccion = input(…). #### usuario selecciona 2
+files = os.walk(folder_name); 
+selected_file = files[seleccion-1];
+
+
+1. fries.txt
+2. 
+
+pablo
+substring(1,3) -> abl
+filename = fries.txt
+filename -> substring (0, filename.length() - 4)
+
+
+[ ] -> referenciar indices en listas, lista[0]
+( ) -> funciones, ejemplo : print(“pablo”)
+{ } -> diccionario{“”}
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+
+
