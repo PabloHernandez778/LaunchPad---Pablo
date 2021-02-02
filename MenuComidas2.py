@@ -33,6 +33,9 @@ def snack_opciones():
 #SubMenu para insertar nuevos snacks
 def snack_insetrar():
     Folder_name = "FolderSnacks/"
+    if (not os.path.isdir(Folder_name)):
+        os.mkdir(Folder_name)
+
     print("\t     -- INSERTE SNACKS--  ")
     nombre_snack = input("-Digite el nombre del Snack: ")
     SnackFileName = nombre_snack + ".txt"
