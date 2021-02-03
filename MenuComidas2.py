@@ -89,6 +89,8 @@ def desayuno_opciones():
 #SubMenu de Desayuno para agregar
 def desayuno_insertar():
     Folder_name = "FolderDesayuno/"
+    if (not os.path.isdir(Folder_name)):
+        os.mkdir(Folder_name)
     print("\t     -- INSERTE DESAYUNO --   ")
     nombre_desayuno = input("-Digite el nombre del Desayuno: ")
     DesayunoFileName = nombre_desayuno + ".txt"
@@ -142,6 +144,8 @@ def almuerzo_opciones():
 
 def almuerzo_insertar():
     Folder_name = "FolderAlmuerzo/"
+    if (not os.path.isdir(Folder_name)):
+        os.mkdir(Folder_name)
     print("\t     --INSERTAR ALMUERZO--  ")
     nombre_almuerzo = input("-Digite el nombre del Almuerzo: ")
     AlmuerzoFileName = nombre_almuerzo + ".txt"
@@ -195,6 +199,8 @@ def cena_opciones():
 #SubMenu para insertar platos de Cena
 def cena_insertar():
     Folder_name = "FolderCena/"
+    if (not os.path.isdir(Folder_name)):
+        os.mkdir(Folder_name)
     print("\t     -- INSERTE CENA --  ")
     nombre_cena = input("-Digite el nombre de la Cena: ")
     CenaFileName = nombre_cena + ".txt"
